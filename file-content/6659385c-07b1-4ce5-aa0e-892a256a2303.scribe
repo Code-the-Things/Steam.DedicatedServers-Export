@@ -1,0 +1,6 @@
+resource "file-content" "6659385c-07b1-4ce5-aa0e-892a256a2303" {
+  uuid = "6659385c-07b1-4ce5-aa0e-892a256a2303"
+  content = "screen -S steam -X stuff \"^C\""
+  dateCreated = "2023-04-21T20:28:16.000Z"
+  lastUpdated = "2023-04-21T20:28:16.000Z"
+}
