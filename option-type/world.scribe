@@ -1,0 +1,13 @@
+resource "option-type" "world" {
+  code = "world"
+  name = "World"
+  uuid = "4d46fafd-6e7e-473f-ad32-da55d28ba735"
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "world"
+  fieldLabel = "World"
+  fieldName = "world"
+  fieldSetName = "world"
+  labels = [ "Steam", "Valheim" ]
+  required = true
+}

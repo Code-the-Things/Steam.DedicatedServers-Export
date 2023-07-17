@@ -1,0 +1,29 @@
+resource "container-type" "ef58991c-c362-4168-8a36-d32951cb3eac" {
+  code = "ef58991c-c362-4168-8a36-d32951cb3eac"
+  name = "Valheim"
+  uuid = "8dd4e7df-3100-4cea-8d1c-7c0a04e04e16"
+  containerMounts = [
+    { code = "template: 2223d3c4-7df1-4cc6-94cf-eb0c1176cd47" },
+    { code = "template: 3b878ac0-e2e2-46a9-9ef9-b684f6f1dd3f" },
+    { code = "template: a8f8480b-d9ec-429f-8d46-80b68d24d274" }
+  ]
+  containerVersion = "dedicated"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  scripts = [
+    { code = "d0839669-56d1-4111-afd9-1b12b781b8e5" },
+    { code = "4637853c-e914-48ac-adb7-cfac62117719" }
+  ]
+  serverType = "vm"
+  shortName = "valheim"
+  showServerLogs = true
+  statTypeCode = "vm"
+  templates = [
+    { code = "3b878ac0-e2e2-46a9-9ef9-b684f6f1dd3f" },
+    { code = "2223d3c4-7df1-4cc6-94cf-eb0c1176cd47" },
+    { code = "a8f8480b-d9ec-429f-8d46-80b68d24d274" }
+  ]
+  virtualImage = { code = "vmware.vsphere.image.morpheus.ubuntu.22.04.20230131.amd64" }
+}
