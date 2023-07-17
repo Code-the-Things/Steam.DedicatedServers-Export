@@ -1,0 +1,64 @@
+resource "file-content" "d4df58c3-5c87-4390-a8b8-6b98f156dfe2" {
+  uuid = "d4df58c3-5c87-4390-a8b8-6b98f156dfe2"
+  content = <<EOF
+####################################
+# Install Valheim
+
+adduser l4d2
+echo "<%=cypher.read('secret/L4D2')%>" | passwd --stdin l4d2
+
+yum install screen glibc.i686 libstdc++.i686 -y
+
+mkdir /Valheim 2>/dev/null
+mkdir /Valheim/Morpheus 2>/dev/null
+cd /Valheim/
+
+####################################
+# Install L4D2
+wget http://media.steampowered.com/installer/steamcmd_linux.tar.gz
+tar -xvzf steamcmd_linux.tar.gz
+rm -f steamcmd_linux.tar.gz
+
+./steamcmd.sh +login anonymous +force_install_dir '/Valheim/Server' +app_update 896660 -validate +quit
+
+####################################
+# Install Metamod
+
+cd /Valheim/Server/
+wget https://mms.alliedmods.net/mmsdrop/1.11/mmsource-1.11.0-git1144-linux.tar.gz
+tar -xvzf mmsource-1.10.7-git971-linux.tar.gz
+rm -f mmsource-1.10.7-git971-linux.tar.gz
+
+####################################
+# Install Sourcemod
+
+cd /Valheim/Server/
+wget https://sm.alliedmods.net/smdrop/1.10/sourcemod-1.10.0-git6502-linux.tar.gz
+tar -xvzf sourcemod-1.10.0-git6497-linux.tar.gz
+rm -f sourcemod-1.10.0-git6497-linux.tar.gz
+
+####################################
+# Create Symlinks
+ln -sf /Valheim/Morpheus/start_server.sh /Valheim/Server/start_server.sh
+ln -sf /Valheim/Morpheus/banned_user.cfg /Valheim/Server/cfg/banned_user.cfg
+ln -sf /Valheim/Morpheus/banned_ip.cfg /Valheim/Server/cfg/banned_ip.cfg
+#ln -sf /Valheim/Morpheus/motd.txt /Valheim/Server/left4dead2/motd.txt
+ln -sf /Valheim/Morpheus/metamod.vdf /Valheim/Server/addons/metamod.vdf
+#ln -sf /L4ValheimD2/Morpheus/host.txt /Valheim/Server/left4dead2/host.txt
+ln -sf /Valheim/Morpheus/admins_simple.ini /Valheim/Server/addons/sourcemod/configs/admins_simple.ini
+
+####################################
+# Fix Ownership
+sudo chmod +x /Valheim/Server/start_server.sh
+sudo chown -R l4d2 /Valheim/
+
+####################################
+# Start Server
+
+#su l4d2
+
+#/L4D2/Server/srcds_run -game left4dead2 +exec server.cfg +port "<%=customOptions.steamPort%>" +maxplayers 8 -tickrate 100 -pingboost 2 +map c1m1_hotel > /dev/null 2>&1 &
+EOF
+  dateCreated = "2021-03-30T21:46:45.000Z"
+  lastUpdated = "2021-03-30T22:27:02.000Z"
+}
