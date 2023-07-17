@@ -1,0 +1,16 @@
+resource "code-repository" "Work-Morpheus" {
+  name = "Work-Morpheus"
+  uuid = "a0aab165-16bc-4907-a6a7-b61fec911ea3"
+  codeLanguage = "PowerShell"
+  dateCreated = "2021-12-24T19:08:54.000Z"
+  defaultBranch = "main"
+  description = "Quick Morpheus Testing"
+  displayName = "BungeBash/Work-Morpheus"
+  externalId = "438003590"
+  integration = { name = "GitHub" }
+  lastUpdated = "2023-07-09T03:36:28.000Z"
+  orgId = "44505140"
+  orgName = "BungeBash"
+  repoSize = 424
+  serviceUrl = "https://github.com/BungeBash/Work-Morpheus"
+}
