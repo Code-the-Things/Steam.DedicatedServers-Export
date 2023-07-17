@@ -1,0 +1,29 @@
+resource "container-template" "9d015558-46d7-44c4-a18f-5c76a02dfc80" {
+  code = "9d015558-46d7-44c4-a18f-5c76a02dfc80"
+  name = "Steam - Valheim - Server Config"
+  uuid = "e81b8b9e-83ae-42a3-9675-e8f44c0c34b2"
+  dateCreated = "2021-03-30T22:20:45.000Z"
+  fileName = "start_server.sh"
+  fileOwner = "steam"
+  filePath = "/steam/morpheus"
+  labels = [ "Steam", "Valheim" ]
+  lastUpdated = "2023-03-09T18:26:42.000Z"
+  settingCategory = "Valheim"
+  settingName = "start_server.sh"
+  template = <<EOF
+export templdpath=$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
+export SteamAppId=892970
+
+
+echo "Starting server PRESS CTRL-C to exit"
+
+# Tip: Make a local copy of this script to avoid it being overwritten by steam.
+# NOTE: Minimum password length is 5 characters & Password cant be in the server name.
+# NOTE: You need to make sure the ports 2456-2458 is being forwarded to your server through your local router & firewall.
+./valheim_server.x86_64 -name "<%=customOptions.serverName%>" -port "<%=customOptions.port%>" -world "<%=customOptions.world%>" -password "<%=customOptions.password%>" -crossplay
+
+export LD_LIBRARY_PATH=$templdpath
+EOF
+  templatePhase = "postProvision"
+}
