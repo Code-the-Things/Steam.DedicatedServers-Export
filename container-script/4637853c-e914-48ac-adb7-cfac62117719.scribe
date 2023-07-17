@@ -1,0 +1,12 @@
+resource "container-script" "4637853c-e914-48ac-adb7-cfac62117719" {
+  code = "4637853c-e914-48ac-adb7-cfac62117719"
+  name = "Stop Steam Server"
+  uuid = "13fa0d28-4906-4bf7-8b99-5a3085ab96ae"
+  dateCreated = "2023-04-21T20:22:34.000Z"
+  labels = [ "Core Keeper", "L4D2", "Steam", "Valheim" ]
+  lastUpdated = "2023-04-21T20:22:34.000Z"
+  runAsUser = "steam"
+  script = "screen -S steam -X stuff \"^C\""
+  scriptPhase = "stop"
+  sudoUser = true
+}
