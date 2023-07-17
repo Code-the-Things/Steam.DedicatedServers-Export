@@ -1,0 +1,20 @@
+resource "task" "Backup Steam Server" {
+  name = "Backup Steam Server"
+  uuid = "25265a33-16bb-4172-87ed-8e9cfe1f2819"
+  dateCreated = "2023-04-21T14:07:55.000Z"
+  executeTarget = "resource"
+  labels = [ "Core Keeper", "Steam", "Valheim" ]
+  lastUpdated = "2023-04-21T14:07:55.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Steam Dedicated Server" }
+    },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "backup.yml"
+    },
+    { optionType = { code = "ansibleGitRef" }, value = "main" }
+  ]
+  taskType = { code = "ansibleTask" }
+}
