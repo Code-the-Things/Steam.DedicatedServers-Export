@@ -1,0 +1,15 @@
+resource "instance-type-layout" "69847458-4865-4fbb-8dec-ac7fcf6d6794" {
+  code = "69847458-4865-4fbb-8dec-ac7fcf6d6794"
+  name = "L4D2"
+  uuid = "6a8d71c6-3961-49a2-b397-68b4ab440ae7"
+  actions = [ { code = "69847458-4865-4fbb-8dec-ac7fcf6d6794" } ]
+  hasAutoScale = true
+  instanceVersion = "Dedicated"
+  labels = [ "Gaming", "L4D2", "Steam" ]
+  memoryRequirement = 4294967296
+  optionTypes = [ { code = "steamAppId" } ]
+  provisionType = { code = "vmware" }
+  supportsConvertToManaged = true
+  taskSets = [ { name = "Steam Dedicated Server" } ]
+  workloads = [ { code = "be825eae-52d0-4841-af16-cc32f56acfb9" } ]
+}

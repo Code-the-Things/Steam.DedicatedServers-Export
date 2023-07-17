@@ -1,0 +1,10 @@
+resource "container-type-mount" "template: 1d2040c5-3e33-4a65-ad20-e8218d2acbeb" {
+  code = "template: 1d2040c5-3e33-4a65-ad20-e8218d2acbeb"
+  name = "Steam - L4D2 - Banner"
+  containerPath = "/steam/morpheus"
+  hostPath = "/steam/morpheus"
+  mountType = "config"
+  shortName = "steam-l4d2-banner"
+  template = { code = "1d2040c5-3e33-4a65-ad20-e8218d2acbeb" }
+  volumeName = "steam-l4d2-banner"
+}
