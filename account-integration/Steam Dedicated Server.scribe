@@ -1,0 +1,8 @@
+resource "account-integration" "Steam Dedicated Server" {
+  name = "Steam Dedicated Server"
+  uuid = "461176fc-7cd5-4e4f-9122-430347cebe93"
+  category = "cm-server"
+  integrationType = { code = "ansible" }
+  serviceUrl = "https://github.com/Code-the-Things/Steam.DedicatedServers.git"
+  type = "ansible"
+}

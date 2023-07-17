@@ -1,0 +1,5 @@
+resource "task-set-task" "cb16101e-11c4-482e-800f-47bc617709ec" {
+  uuid = "cb16101e-11c4-482e-800f-47bc617709ec"
+  task = { name = "Steam Install" }
+  taskOrder = 1
+}

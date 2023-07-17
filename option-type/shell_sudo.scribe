@@ -1,0 +1,13 @@
+resource "option-type" "shell.sudo" {
+  code = "shell.sudo"
+  name = "Sudo"
+  uuid = "f164e60c-35d8-43d1-b696-94a4474fe77a"
+  category = "shell"
+  defaultValue = "off"
+  displayOrder = 5
+  fieldCode = "gomorpheus.label.sudo"
+  fieldContext = "taskOptions"
+  fieldLabel = "Sudo"
+  fieldName = "sudo"
+  type = "checkbox"
+}
