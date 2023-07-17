@@ -1,0 +1,10 @@
+resource "container-type-mount" "template: 2223d3c4-7df1-4cc6-94cf-eb0c1176cd47" {
+  code = "template: 2223d3c4-7df1-4cc6-94cf-eb0c1176cd47"
+  name = "Steam - Banned Users"
+  containerPath = "/steam/morpheus"
+  hostPath = "/steam/morpheus"
+  mountType = "config"
+  shortName = "steam-banned-users"
+  template = { code = "2223d3c4-7df1-4cc6-94cf-eb0c1176cd47" }
+  volumeName = "steam-banned-users"
+}

@@ -1,0 +1,11 @@
+resource "option-type" "job" {
+  code = "job"
+  name = "Steam Backup Job"
+  uuid = "3b832c75-0468-4c34-8aab-d763176a34ce"
+  defaultValue = "8217"
+  fieldContext = "config.customOptions"
+  fieldName = "job"
+  labels = [ "Core Keeper", "Job", "Steam", "Valheim" ]
+  refCode = "job"
+  type = "hidden"
+}
