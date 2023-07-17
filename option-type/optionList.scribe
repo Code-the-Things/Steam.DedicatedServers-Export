@@ -1,0 +1,11 @@
+resource "option-type" "optionList" {
+  code = "optionList"
+  name = "Steam Backup Option List"
+  uuid = "cde07d87-85ec-45ee-9a95-d5cabd22c502"
+  defaultValue = "321"
+  fieldContext = "config.customOptions"
+  fieldName = "optionList"
+  labels = [ "Core Keeper", "Steam", "Valheim" ]
+  refCode = "optionList"
+  type = "hidden"
+}

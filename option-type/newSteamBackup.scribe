@@ -1,0 +1,16 @@
+resource "option-type" "newSteamBackup" {
+  code = "newSteamBackup"
+  name = "New Steam Backup"
+  uuid = "9b72a7dc-4ea2-4b70-be59-412d6fff9081"
+  dependsOnCode = "steamBackup"
+  displayOrder = 1
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "New Backup Name"
+  fieldName = "newSteamBackup"
+  helpBlock = "Name of the Backup to Create or Mount.  A single string that does not support special characters or spaces.  8-32 Characters long."
+  labels = [ "Backups", "Steam" ]
+  placeHolder = "myawesomebackup"
+  requireOnCode = "matchAll::steamBackup:(New)"
+  visibleOnCode = "matchAll::steamBackup:(New)"
+}
