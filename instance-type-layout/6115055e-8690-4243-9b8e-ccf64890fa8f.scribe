@@ -4,6 +4,7 @@ resource "instance-type-layout" "6115055e-8690-4243-9b8e-ccf64890fa8f" {
   uuid = "a4c47a16-7f54-48c5-bf56-627df1f84837"
   actions = [ { code = "6115055e-8690-4243-9b8e-ccf64890fa8f" } ]
   hasAutoScale = true
+  instanceType = { code = "steam" }
   instanceVersion = "Dedicated"
   labels = [ "Core Keeper", "Gaming", "Steam" ]
   memoryRequirement = 4294967296
