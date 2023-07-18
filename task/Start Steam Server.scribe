@@ -9,8 +9,13 @@ resource "task" "Start Steam Server" {
     {
       content = { uuid = "e96cbb06-8661-45a0-8708-87b05da7a3e9" }
       optionType = { code = "script" }
+      task = { name = "Start Steam Server" }
     },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    {
+      optionType = { code = "shell.sudo" }
+      task = { name = "Start Steam Server" }
+      value = "on"
+    }
   ]
   taskType = { code = "script" }
 }
