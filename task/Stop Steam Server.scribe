@@ -7,14 +7,14 @@ resource "task" "Stop Steam Server" {
   lastUpdated = "2023-04-21T20:28:16.000Z"
   options = [
     {
-      content = { uuid = "6659385c-07b1-4ce5-aa0e-892a256a2303" }
-      optionType = { code = "script" }
-      task = { name = "Stop Steam Server" }
-    },
-    {
       optionType = { code = "shell.sudo" }
       task = { name = "Stop Steam Server" }
       value = "on"
+    },
+    {
+      content = { uuid = "6659385c-07b1-4ce5-aa0e-892a256a2303" }
+      optionType = { code = "script" }
+      task = { name = "Stop Steam Server" }
     }
   ]
   taskType = { code = "script" }
