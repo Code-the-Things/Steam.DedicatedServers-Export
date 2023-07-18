@@ -4,6 +4,7 @@ resource "instance-type-layout" "f8e6f26a-8839-4c0a-82d6-0c79b9c83a9c" {
   uuid = "2d23093f-4c3a-4ef0-badd-963f342b8250"
   actions = [ { code = "f8e6f26a-8839-4c0a-82d6-0c79b9c83a9c" } ]
   hasAutoScale = true
+  instanceType = { code = "steam" }
   instanceVersion = "Dedicated"
   labels = [ "Gaming", "Steam", "Valheim" ]
   memoryRequirement = 4294967296
