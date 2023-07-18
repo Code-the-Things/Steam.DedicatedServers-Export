@@ -8,11 +8,17 @@ resource "task" "Update Steam Server" {
   options = [
     {
       optionType = { code = "ansibleGitId" }
+      task = { name = "Update Steam Server" }
       value = { name = "Steam Dedicated Server" }
     },
-    { optionType = { code = "ansibleGitRef" }, value = "main" },
+    {
+      optionType = { code = "ansibleGitRef" }
+      task = { name = "Update Steam Server" }
+      value = "main"
+    },
     {
       optionType = { code = "ansiblePlaybook" }
+      task = { name = "Update Steam Server" }
       value = "update.yml"
     }
   ]
