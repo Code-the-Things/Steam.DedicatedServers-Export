@@ -7,14 +7,14 @@ resource "task" "Core Keeper - Full Install" {
   lastUpdated = "2022-10-04T14:57:14.000Z"
   options = [
     {
-      optionType = { code = "shell.sudo" }
-      task = { name = "Core Keeper - Full Install" }
-      value = "on"
-    },
-    {
       content = { uuid = "75465482-5482-4749-8fea-f4ee8cf1475a" }
       optionType = { code = "script" }
       task = { name = "Core Keeper - Full Install" }
+    },
+    {
+      optionType = { code = "shell.sudo" }
+      task = { name = "Core Keeper - Full Install" }
+      value = "on"
     }
   ]
   taskType = { code = "script" }
