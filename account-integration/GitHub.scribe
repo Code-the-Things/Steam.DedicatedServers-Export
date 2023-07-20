@@ -2,6 +2,7 @@ resource "account-integration" "GitHub" {
   name = "GitHub"
   uuid = "9b31c2b0-ba15-4d81-bae4-8c4fbfab0afc"
   category = "cm-server"
+  config = { cacheEnabled = false, defaultBranch = "" }
   integrationType = { code = "github" }
   serviceUrl = ""
   type = "github"
