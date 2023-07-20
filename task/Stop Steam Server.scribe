@@ -9,13 +9,8 @@ resource "task" "Stop Steam Server" {
     {
       content = { uuid = "6659385c-07b1-4ce5-aa0e-892a256a2303" }
       optionType = { code = "script" }
-      task = { name = "Stop Steam Server" }
     },
-    {
-      optionType = { code = "shell.sudo" }
-      task = { name = "Stop Steam Server" }
-      value = "on"
-    }
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }

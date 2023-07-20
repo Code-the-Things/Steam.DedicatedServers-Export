@@ -2,6 +2,27 @@ resource "account-integration" "Steam Dedicated Server" {
   name = "Steam Dedicated Server"
   uuid = "461176fc-7cd5-4e4f-9122-430347cebe93"
   category = "cm-server"
+  config = {
+    ansibleCommandBus = "on"
+    ansibleGalaxyEnabled = null
+    ansibleGroupVars = "/"
+    ansibleHostVars = "/"
+    ansiblePlaybooks = "/"
+    ansibleRoles = "/roles"
+    ansibleVerbose = null
+    cacheEnabled = null
+    cm = {
+      ansibleCommandBus = "on"
+      ansibleDefaultBranch = "main"
+      ansibleGalaxyEnabled = false
+      ansibleGroupVars = "/"
+      ansibleHostVars = "/"
+      ansiblePlaybooks = "/"
+      ansibleRoles = "/roles"
+      ansibleVerbose = false
+    }
+    defaultBranch = "main"
+  }
   integrationType = { code = "ansible" }
   serviceUrl = "https://github.com/Code-the-Things/Steam.DedicatedServers.git"
   type = "ansible"
