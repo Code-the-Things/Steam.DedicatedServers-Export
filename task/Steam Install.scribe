@@ -8,19 +8,13 @@ resource "task" "Steam Install" {
   options = [
     {
       optionType = { code = "ansibleGitId" }
-      task = { name = "Steam Install" }
       value = { name = "Steam Dedicated Server" }
     },
     {
       optionType = { code = "ansiblePlaybook" }
-      task = { name = "Steam Install" }
       value = "install.yml"
     },
-    {
-      optionType = { code = "ansibleGitRef" }
-      task = { name = "Steam Install" }
-      value = "main"
-    }
+    { optionType = { code = "ansibleGitRef" }, value = "main" }
   ]
   taskType = { code = "ansibleTask" }
 }
