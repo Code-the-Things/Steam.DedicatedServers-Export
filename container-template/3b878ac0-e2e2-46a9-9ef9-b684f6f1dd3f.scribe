@@ -10,7 +10,7 @@ resource "container-template" "3b878ac0-e2e2-46a9-9ef9-b684f6f1dd3f" {
   lastUpdated = "2022-12-05T21:34:39.000Z"
   settingCategory = "Sourcemod"
   settingName = "admins_simple.ini"
-  template = <<EOF
+  template = <<EOFSCRIBE
 //
 // READ THIS CAREFULLY! SEE BOTTOM FOR EXAMPLES
 //
@@ -57,6 +57,6 @@ resource "container-template" "3b878ac0-e2e2-46a9-9ef9-b684f6f1dd3f" {
 ////////////////////////////////
 
 "STEAM_1:0:5078881"		"99:z"		// "D3Di_" Admin
-EOF
+EOFSCRIBE
   templatePhase = "postProvision"
 }
