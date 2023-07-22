@@ -1,6 +1,6 @@
 resource "file-content" "d4df58c3-5c87-4390-a8b8-6b98f156dfe2" {
   uuid = "d4df58c3-5c87-4390-a8b8-6b98f156dfe2"
-  content = <<EOF
+  content = <<EOFSCRIBE
 ####################################
 # Install Valheim
 
@@ -58,7 +58,7 @@ sudo chown -R l4d2 /Valheim/
 #su l4d2
 
 #/L4D2/Server/srcds_run -game left4dead2 +exec server.cfg +port "<%=customOptions.steamPort%>" +maxplayers 8 -tickrate 100 -pingboost 2 +map c1m1_hotel > /dev/null 2>&1 &
-EOF
+EOFSCRIBE
   dateCreated = "2021-03-30T21:46:45.000Z"
   lastUpdated = "2021-03-30T22:27:02.000Z"
 }
