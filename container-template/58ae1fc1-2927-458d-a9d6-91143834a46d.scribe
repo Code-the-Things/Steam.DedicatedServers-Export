@@ -10,7 +10,7 @@ resource "container-template" "58ae1fc1-2927-458d-a9d6-91143834a46d" {
   lastUpdated = "2022-12-05T22:49:39.000Z"
   settingCategory = "Core Keeper"
   settingName = "Service"
-  template = <<EOF
+  template = <<EOFSCRIBE
 [Unit]
 Description=Core Keeper Service
 After=network.target
@@ -34,6 +34,6 @@ Restart=always
 # For system level services, use `multi-user.target`
 [Install]
 WantedBy=default.target
-EOF
+EOFSCRIBE
   templatePhase = "postProvision"
 }
