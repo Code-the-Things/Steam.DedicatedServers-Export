@@ -10,7 +10,7 @@ resource "container-template" "ac7324fb-74e3-4e52-ba26-d207893ef9e3" {
   lastUpdated = "2022-12-07T01:20:44.000Z"
   settingCategory = "L4D2"
   settingName = "server.cfg"
-  template = <<EOF
+  template = <<EOFSCRIBE
 // Server Name
 hostname "Code the Things #<%=instance.id%>"
 sv_tags "l4d2,code the things,stock,last stand"
@@ -109,6 +109,6 @@ exec banned_user.cfg
 exec banned_ip.cfg
 writeid
 writeip
-EOF
+EOFSCRIBE
   templatePhase = "postProvision"
 }

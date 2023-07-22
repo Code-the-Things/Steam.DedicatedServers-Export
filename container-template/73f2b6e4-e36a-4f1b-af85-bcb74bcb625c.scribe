@@ -10,13 +10,13 @@ resource "container-template" "73f2b6e4-e36a-4f1b-af85-bcb74bcb625c" {
   lastUpdated = "2022-12-07T01:20:59.000Z"
   settingCategory = "Steam"
   settingName = "motd.txt"
-  template = <<EOF
+  template = <<EOFSCRIBE
 <html>
 <head><title>Code the Things <%=instance.id%></title></head>
 <body style="margin:0px;padding:1px;background:#000 000;">
 <img src="https://www.l4d.com/l4d2_servermessage/banner.jpg" style="width:100%;height:100%;" />
 </body>
 </html>
-EOF
+EOFSCRIBE
   templatePhase = "postProvision"
 }
