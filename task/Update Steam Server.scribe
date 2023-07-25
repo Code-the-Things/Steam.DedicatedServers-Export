@@ -1,0 +1,20 @@
+resource "task" "Update Steam Server" {
+  name = "Update Steam Server"
+  uuid = "f528722e-e24c-4178-be9c-9e524f235f05"
+  dateCreated = "2023-04-03T23:45:57.000Z"
+  executeTarget = "resource"
+  labels = [ "Steam", "Valheim" ]
+  lastUpdated = "2023-04-03T23:45:57.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Steam Dedicated Server" }
+    },
+    { optionType = { code = "ansibleGitRef" }, value = "main" },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "update.yml"
+    }
+  ]
+  taskType = { code = "ansibleTask" }
+}
