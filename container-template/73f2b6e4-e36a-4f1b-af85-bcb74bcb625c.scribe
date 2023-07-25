@@ -1,0 +1,22 @@
+resource "container-template" "73f2b6e4-e36a-4f1b-af85-bcb74bcb625c" {
+  code = "73f2b6e4-e36a-4f1b-af85-bcb74bcb625c"
+  name = "Steam - L4D2 - MOTD"
+  uuid = "274fc999-0844-4c73-9623-d33f3ac74dd9"
+  dateCreated = "2020-09-23T14:54:10.000Z"
+  fileName = "motd.txt"
+  fileOwner = "steam"
+  filePath = "/steam/morpheus"
+  labels = [ "L4D2", "Steam" ]
+  lastUpdated = "2022-12-07T01:20:59.000Z"
+  settingCategory = "Steam"
+  settingName = "motd.txt"
+  template = <<EOFSCRIBE
+<html>
+<head><title>Code the Things <%=instance.id%></title></head>
+<body style="margin:0px;padding:1px;background:#000 000;">
+<img src="https://www.l4d.com/l4d2_servermessage/banner.jpg" style="width:100%;height:100%;" />
+</body>
+</html>
+EOFSCRIBE
+  templatePhase = "postProvision"
+}
