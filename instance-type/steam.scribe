@@ -1,0 +1,20 @@
+resource "instance-type" "steam" {
+  code = "steam"
+  name = "Steam Dedicated Server"
+  uuid = "02848db6-660c-4509-a835-c1b482a1c56d"
+  category = "apps"
+  deploymentService = "defaultDeployService"
+  description = "Steam Dedicated Server Instances"
+  environmentPrefix = "STEAM"
+  featured = true
+  hasAutoScale = true
+  hasDeployment = true
+  hasSettings = true
+  labels = [ "Core Keeper", "L4D2", "Steam", "Ubuntu", "Valheim" ]
+  optionTypes = [
+    { code = "steamPort" },
+    { code = "nfs" },
+    { code = "job" },
+    { code = "optionList" }
+  ]
+}
