@@ -1,0 +1,16 @@
+resource "task" "Valheim - Full Install" {
+  name = "Valheim - Full Install"
+  uuid = "3cb0bf07-1868-4b52-a3d7-f4bece3341a8"
+  dateCreated = "2021-03-30T21:46:45.000Z"
+  executeTarget = "resource"
+  labels = [ "Steam", "Valheim" ]
+  lastUpdated = "2022-08-26T13:15:45.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "d4df58c3-5c87-4390-a8b8-6b98f156dfe2" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
