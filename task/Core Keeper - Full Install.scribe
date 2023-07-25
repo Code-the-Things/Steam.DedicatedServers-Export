@@ -1,0 +1,16 @@
+resource "task" "Core Keeper - Full Install" {
+  name = "Core Keeper - Full Install"
+  uuid = "125c86bf-9b6b-42db-aa74-f4667dcc31cc"
+  dateCreated = "2022-10-04T13:16:00.000Z"
+  executeTarget = "resource"
+  labels = [ "Core Keeper", "Steam" ]
+  lastUpdated = "2022-10-04T14:57:14.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "75465482-5482-4749-8fea-f4ee8cf1475a" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
