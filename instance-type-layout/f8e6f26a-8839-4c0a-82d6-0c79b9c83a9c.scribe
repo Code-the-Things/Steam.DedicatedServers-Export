@@ -1,0 +1,21 @@
+resource "instance-type-layout" "f8e6f26a-8839-4c0a-82d6-0c79b9c83a9c" {
+  code = "f8e6f26a-8839-4c0a-82d6-0c79b9c83a9c"
+  name = "Valheim"
+  uuid = "2d23093f-4c3a-4ef0-badd-963f342b8250"
+  actions = [ { code = "f8e6f26a-8839-4c0a-82d6-0c79b9c83a9c" } ]
+  hasAutoScale = true
+  instanceType = { code = "steam" }
+  instanceVersion = "Dedicated"
+  labels = [ "Gaming", "Steam", "Valheim" ]
+  memoryRequirement = 4294967296
+  optionTypes = [
+    { code = "world" },
+    { code = "password" },
+    { code = "steamBackup" },
+    { code = "newSteamBackup" },
+    { code = "steamAppId" }
+  ]
+  provisionType = { code = "vmware" }
+  taskSets = [ { name = "Steam Dedicated Server" } ]
+  workloads = [ { code = "ef58991c-c362-4168-8a36-d32951cb3eac" } ]
+}
