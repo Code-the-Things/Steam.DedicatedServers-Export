@@ -1,0 +1,6 @@
+resource "file-content" "e96cbb06-8661-45a0-8708-87b05da7a3e9" {
+  uuid = "e96cbb06-8661-45a0-8708-87b05da7a3e9"
+  content = "screen -dmS steam /steam/start.sh"
+  dateCreated = "2023-03-15T14:36:24.000Z"
+  lastUpdated = "2023-04-21T18:57:03.000Z"
+}
