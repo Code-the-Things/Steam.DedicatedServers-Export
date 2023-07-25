@@ -1,9 +1,0 @@
-resource "file-content" "75465482-5482-4749-8fea-f4ee8cf1475a" {
-  uuid = "75465482-5482-4749-8fea-f4ee8cf1475a"
-  contentPath = "/Instances/Core Keeper/Install.sh"
-  contentRef = "main"
-  dateCreated = "2022-10-04T13:16:00.000Z"
-  lastUpdated = "2022-10-07T15:22:43.000Z"
-  repository = { name = "Work-Morpheus" }
-  sourceType = "repository"
-}

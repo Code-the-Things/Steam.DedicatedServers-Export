@@ -1,7 +1,0 @@
-resource "option-type-list" "Steam Backups" {
-  name = "Steam Backups"
-  uuid = "a0d2e8d2-ab07-4ced-a43c-f8718a319b15"
-  initialDataset = "[{\"name\":\"None\",\"value\":\"None\"},{\"name\":\"Create New\",\"value\":\"New\"},{\"name\":\"BizzCoreKeeper\",\"value\":\"BizzCoreKeeper\"},{\"name\":\"BizzValheim\",\"value\":\"BizzValheim\"},{\"name\":\"cosmere\",\"value\":\"cosmere\"},{\"name\":\"MyTest\",\"value\":\"MyTest\"}]"
-  labels = [ "Backups", "Steam" ]
-  type = "manual"
-}

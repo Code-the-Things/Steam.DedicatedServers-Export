@@ -1,6 +1,0 @@
-resource "task-set-task" "9d1c590c-0b2b-4418-9129-1eca1b0664f5" {
-  uuid = "9d1c590c-0b2b-4418-9129-1eca1b0664f5"
-  task = { name = "Start Steam Server" }
-  taskOrder = 2
-  taskPhase = "start"
-}

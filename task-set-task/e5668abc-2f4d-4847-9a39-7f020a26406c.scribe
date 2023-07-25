@@ -1,6 +1,0 @@
-resource "task-set-task" "e5668abc-2f4d-4847-9a39-7f020a26406c" {
-  uuid = "e5668abc-2f4d-4847-9a39-7f020a26406c"
-  task = { name = "Stop Steam Server" }
-  taskOrder = 3
-  taskPhase = "stop"
-}
