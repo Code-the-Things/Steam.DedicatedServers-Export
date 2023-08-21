@@ -2,6 +2,7 @@ resource "container-type" "ef58991c-c362-4168-8a36-d32951cb3eac" {
   code = "ef58991c-c362-4168-8a36-d32951cb3eac"
   name = "Valheim"
   uuid = "8dd4e7df-3100-4cea-8d1c-7c0a04e04e16"
+  category = "Valheim"
   containerMounts = [
     { code = "template: 2223d3c4-7df1-4cc6-94cf-eb0c1176cd47" },
     { code = "template: 3b878ac0-e2e2-46a9-9ef9-b684f6f1dd3f" },
