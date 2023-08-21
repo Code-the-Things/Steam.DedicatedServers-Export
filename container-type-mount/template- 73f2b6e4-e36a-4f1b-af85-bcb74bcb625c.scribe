@@ -1,6 +1,7 @@
 resource "container-type-mount" "template: 73f2b6e4-e36a-4f1b-af85-bcb74bcb625c" {
   code = "template: 73f2b6e4-e36a-4f1b-af85-bcb74bcb625c"
   name = "Steam - L4D2 - MOTD"
+  uuid = "4022cec5-af77-4d1b-9a7a-128fed0bddf5"
   containerPath = "/steam/morpheus"
   hostPath = "/steam/morpheus"
   mountType = "config"

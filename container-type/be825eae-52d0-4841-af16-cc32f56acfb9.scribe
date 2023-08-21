@@ -2,7 +2,7 @@ resource "container-type" "be825eae-52d0-4841-af16-cc32f56acfb9" {
   code = "be825eae-52d0-4841-af16-cc32f56acfb9"
   name = "L4D2"
   uuid = "dba65244-c82e-4219-ac7d-936b7ebba4c4"
-  category = "Gaming"
+  category = "L4D2"
   containerMounts = [
     { code = "template: 1d2040c5-3e33-4a65-ad20-e8218d2acbeb" },
     { code = "template: 2223d3c4-7df1-4cc6-94cf-eb0c1176cd47" },
@@ -13,7 +13,7 @@ resource "container-type" "be825eae-52d0-4841-af16-cc32f56acfb9" {
   ]
   containerVersion = "dedicated"
   entryPoint = ""
-  logTypeCode = "vmware"
+  logTypeCode = "vm"
   provisionType = { code = "vmware" }
   repositoryImage = ""
   serverType = "vm"
