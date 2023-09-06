@@ -1,12 +1,12 @@
 resource "option-type" "steamAppId" {
   code = "steamAppId"
-  name = "Valheim App ID"
-  uuid = "e3386095-02cc-461c-b086-d0a2728153a3"
-  defaultValue = "896660"
+  name = "Core Keeper App ID"
+  uuid = "fc319e85-9b3c-43a2-9390-4ff12fe1ed8e"
+  defaultValue = "1963720"
   displayValueOnDetails = true
   editable = true
   fieldContext = "config.customOptions"
   fieldName = "steamAppId"
-  labels = [ "Steam", "Valheim" ]
+  labels = [ "Core Keeper", "Steam" ]
   type = "hidden"
 }
