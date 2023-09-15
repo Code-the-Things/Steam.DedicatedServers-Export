@@ -1,7 +1,7 @@
 resource "container-type-mount" "template: 2223d3c4-7df1-4cc6-94cf-eb0c1176cd47" {
   code = "template: 2223d3c4-7df1-4cc6-94cf-eb0c1176cd47"
   name = "Steam - Banned Users"
-  uuid = "914d131e-4530-4872-a34a-380407f5939e"
+  uuid = "fc3c28b9-05d1-43bc-bd7c-916efa2f1e79"
   containerPath = "/steam/morpheus"
   hostPath = "/steam/morpheus"
   mountType = "config"
