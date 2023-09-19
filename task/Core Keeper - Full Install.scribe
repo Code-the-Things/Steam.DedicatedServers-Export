@@ -6,11 +6,11 @@ resource "task" "Core Keeper - Full Install" {
   labels = [ "Core Keeper", "Steam" ]
   lastUpdated = "2022-10-04T14:57:14.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "75465482-5482-4749-8fea-f4ee8cf1475a" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
