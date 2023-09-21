@@ -11,6 +11,11 @@ resource "instance-type" "steam" {
   hasDeployment = true
   hasSettings = true
   labels = [ "Core Keeper", "L4D2", "Steam", "Ubuntu", "Valheim" ]
+  layouts = [
+    { code = "6115055e-8690-4243-9b8e-ccf64890fa8f" },
+    { code = "69847458-4865-4fbb-8dec-ac7fcf6d6794" },
+    { code = "f8e6f26a-8839-4c0a-82d6-0c79b9c83a9c" }
+  ]
   optionTypes = [
     { code = "steamPort" },
     { code = "nfs" },
