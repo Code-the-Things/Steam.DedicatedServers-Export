@@ -1,12 +1,12 @@
 resource "option-type" "steamAppId" {
   code = "steamAppId"
-  name = "Core Keeper App ID"
-  uuid = "fc319e85-9b3c-43a2-9390-4ff12fe1ed8e"
-  defaultValue = "1963720"
+  name = "L4D2 App ID"
+  uuid = "fedbf201-29aa-4065-806b-789498acdde2"
+  defaultValue = "222860"
   displayValueOnDetails = true
   editable = true
   fieldContext = "config.customOptions"
   fieldName = "steamAppId"
-  labels = [ "Core Keeper", "Steam" ]
+  labels = [ "L4D2", "Steam" ]
   type = "hidden"
 }
