@@ -1,7 +1,7 @@
 resource "container-type-mount" "template: 3b878ac0-e2e2-46a9-9ef9-b684f6f1dd3f" {
   code = "template: 3b878ac0-e2e2-46a9-9ef9-b684f6f1dd3f"
   name = "Steam - SourceMod Admin Config"
-  uuid = "924b22c1-430e-4f40-a3b6-bbbcaee66532"
+  uuid = "92c7fe68-0a0b-4cdf-9d34-abb3b2d42832"
   containerPath = "/steam/morpheus"
   hostPath = "/steam/morpheus"
   mountType = "config"
