@@ -1,0 +1,3 @@
+resource "label" "L4D2" {
+  name = "L4D2"
+}
