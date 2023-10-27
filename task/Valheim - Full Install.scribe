@@ -6,11 +6,11 @@ resource "task" "Valheim - Full Install" {
   labels = [ "Steam", "Valheim" ]
   lastUpdated = "2022-08-26T13:15:45.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "d4df58c3-5c87-4390-a8b8-6b98f156dfe2" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
