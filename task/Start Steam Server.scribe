@@ -6,11 +6,11 @@ resource "task" "Start Steam Server" {
   labels = [ "Core Keeper", "L4D2", "Steam", "Valheim" ]
   lastUpdated = "2023-04-21T18:57:21.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "e96cbb06-8661-45a0-8708-87b05da7a3e9" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
