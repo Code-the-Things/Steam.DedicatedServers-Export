@@ -1,12 +1,12 @@
 resource "option-type" "steamAppId" {
   code = "steamAppId"
-  name = "L4D2 App ID"
-  uuid = "fedbf201-29aa-4065-806b-789498acdde2"
-  defaultValue = "222860"
+  name = "Valheim App ID"
+  uuid = "e3386095-02cc-461c-b086-d0a2728153a3"
+  defaultValue = "896660"
   displayValueOnDetails = true
   editable = true
   fieldContext = "config.customOptions"
   fieldName = "steamAppId"
-  labels = [ "L4D2", "Steam" ]
+  labels = [ "Steam", "Valheim" ]
   type = "hidden"
 }
