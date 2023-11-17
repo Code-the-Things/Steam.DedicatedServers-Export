@@ -6,11 +6,11 @@ resource "task" "Stop Steam Server" {
   labels = [ "Core Keeper", "L4D2", "Steam", "Valheim" ]
   lastUpdated = "2023-04-21T20:28:16.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "6659385c-07b1-4ce5-aa0e-892a256a2303" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
